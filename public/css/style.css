@@ -1,0 +1,16 @@
+.text-danger{
+    color:red;
+}
+.page-button{
+    display: inline;
+    border: 1px solid black;
+    padding:10px;
+    margin:10px;
+}
+.pagination{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
