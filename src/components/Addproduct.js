@@ -65,7 +65,7 @@ export default function AddProduct() {
             autoComplete="name"
             autoFocus
             onChange={handler}
-            {...register('name',{ required: "Name is required", pattern: {value: /^[A-Za-z]{3,}$/i, message: 'This is not a valid name'} })}
+            {...register('name',{ required: "Name is required", pattern: {value: /^[A-Za-z_]{3,}$/i, message: 'This is not a valid name'} })}
           />
           <p className="text-danger">{errors.name?.message}</p>
            <TextField
@@ -77,7 +77,7 @@ export default function AddProduct() {
             name="category"
             autoComplete="category"
             onChange={handler}
-            {...register('category',{ required: "Category is required", pattern: {value: /^[A-Za-z]{3,}$/i, message: 'This is not a valid category'} })}
+            {...register('category',{ required: "Category is required", pattern: {value: /^[A-Za-z_]{3,}$/i, message: 'This is not a valid category'} })}
           />
            <p className="text-danger">{errors.category?.message}</p>
            <TextField
@@ -112,7 +112,7 @@ export default function AddProduct() {
             name="manufacturer"
             autoComplete="manufacturer"
             onChange={handler}
-            {...register('manufacturer',{ required: "manufacturer is required", pattern: {value: /^[A-Za-z]{3,}$/i, message: 'This is not a valid manufacturer'} })}
+            {...register('manufacturer',{ required: "manufacturer is required", pattern: {value: /^[A-Za-z_]{3,}$/i, message: 'This is not a valid manufacturer'} })}
           />
             <p className="text-danger">{errors.manufacturer?.message}</p>
            <TextField
